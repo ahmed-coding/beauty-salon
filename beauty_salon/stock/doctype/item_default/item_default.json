@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "creation": "2023-11-25 02:25:18.173107",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "default_warehouse",
+  "section_break_4s34",
+  "default_price_list",
+  "default_discount_account",
+  "purchase_defaults_section",
+  "default_buying_cost_center",
+  "default_supplier",
+  "column_break_qiwk",
+  "expense_account",
+  "default_provisional_account",
+  "sales_defaults_column",
+  "default_selling_cost_center",
+  "column_break_qsfp",
+  "default_income_account",
+  "deferred_accounting_defaults_section",
+  "deferred_expense_account",
+  "column_break_sh0g",
+  "deferred_revenue_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_4s34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "default_discount_account",
+   "fieldtype": "Link",
+   "label": "Default Discount Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "purchase_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Defaults"
+  },
+  {
+   "fieldname": "default_buying_cost_center",
+   "fieldtype": "Link",
+   "label": "Default Buying Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "default_supplier",
+   "fieldtype": "Data",
+   "label": "Default Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_qiwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Link",
+   "label": "Default Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_provisional_account",
+   "fieldtype": "Link",
+   "label": "Default Provisional Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "sales_defaults_column",
+   "fieldtype": "Column Break",
+   "label": "Sales Defaults"
+  },
+  {
+   "fieldname": "default_selling_cost_center",
+   "fieldtype": "Data",
+   "label": "Default Selling Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_qsfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Link",
+   "label": "Default Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "deferred_accounting_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Deferred Accounting Defaults"
+  },
+  {
+   "fieldname": "deferred_expense_account",
+   "fieldtype": "Link",
+   "label": "Deferred Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_sh0g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deferred_revenue_account",
+   "fieldtype": "Link",
+   "label": "Deferred Revenue Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-25 02:48:38.462341",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Item Default",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

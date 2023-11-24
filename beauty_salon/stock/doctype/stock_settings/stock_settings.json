@@ -1,0 +1,354 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>c</p></div>\", \"by\": \"Administrator\", \"name\": \"28f6419ff4\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-25 01:25:27.620675",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "defaults_tab",
+  "item_defaults_section",
+  "item_naming_by",
+  "valuation_method",
+  "item_group",
+  "column_break_ssyn",
+  "default_warehouse",
+  "sample_retention_warehouse",
+  "stock_uom",
+  "price_list_defaults_section",
+  "auto_insert_price_list_rate_if_missing",
+  "column_break_pmkl",
+  "update_existing_price_list_rate",
+  "stock_uom_quantity_section",
+  "allow_to_edit_stock_uom_qty_for_sales",
+  "column_break_bhnb",
+  "allow_to_edit_stock_uom_qty_for_purchase",
+  "stock_validations_tab",
+  "stock_transactions_settings_section",
+  "over_delivery_receipt_allowance",
+  "mr_qty_allowance",
+  "column_break_j94q",
+  "role_allowed_to_over_deliver_receive",
+  "allow_negative_stock",
+  "show_barcode_field",
+  "clean_description_html",
+  "quality_inspection_settings_section",
+  "action_if_quality_inspection_is_not_submitted",
+  "column_break_7cd6",
+  "action_if_quality_inspection_is_rejected",
+  "stock_reservation_tab",
+  "enable_stock_reservation",
+  "column_break_tb2g",
+  "allow_partial_reservation",
+  "auto_reserve_stock_for_sales_order_on_purchase",
+  "serial_and_batch_reservation_section",
+  "auto_reserve_serial_and_batch",
+  "serial_and_batch_item_settings_tab",
+  "section_break_7",
+  "auto_create_serial_and_batch_bundle_for_outward",
+  "pick_serial_and_batch_based_on",
+  "column_break_9lqb",
+  "disable_serial_no_and_batch_selector",
+  "use_naming_series",
+  "naming_series_prefix",
+  "stock_planning_tab",
+  "auto_material_request_section",
+  "auto_indent",
+  "column_break_4z9d",
+  "reorder_email_notify"
+ ],
+ "fields": [
+  {
+   "fieldname": "defaults_tab",
+   "fieldtype": "Tab Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "item_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Item Defaults"
+  },
+  {
+   "fieldname": "item_naming_by",
+   "fieldtype": "Select",
+   "label": "Item Naming By",
+   "options": "Item Code\nNaming Series"
+  },
+  {
+   "fieldname": "valuation_method",
+   "fieldtype": "Select",
+   "label": "Default Valuation Method",
+   "options": "FIFO\nMoving Average\nLIFO"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Default Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "column_break_ssyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Data",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "sample_retention_warehouse",
+   "fieldtype": "Data",
+   "label": "Sample Retention Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Data",
+   "label": "Default Stock UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "price_list_defaults_section",
+   "fieldtype": "Section Break",
+   "label": "Price List Defaults"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_insert_price_list_rate_if_missing",
+   "fieldtype": "Check",
+   "label": "Auto Insert Item Price If Missing"
+  },
+  {
+   "fieldname": "column_break_pmkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "update_existing_price_list_rate",
+   "fieldtype": "Check",
+   "label": "Update Existing Price List Rate"
+  },
+  {
+   "fieldname": "stock_uom_quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Stock UOM Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_to_edit_stock_uom_qty_for_sales",
+   "fieldtype": "Check",
+   "label": "Allow to Edit Stock UOM Qty for Sales Documents"
+  },
+  {
+   "fieldname": "column_break_bhnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_to_edit_stock_uom_qty_for_purchase",
+   "fieldtype": "Check",
+   "label": "Allow to Edit Stock UOM Qty for Purchase Documents"
+  },
+  {
+   "fieldname": "stock_validations_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stock Validations"
+  },
+  {
+   "fieldname": "stock_transactions_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Stock Transactions Settings"
+  },
+  {
+   "fieldname": "over_delivery_receipt_allowance",
+   "fieldtype": "Float",
+   "label": "Over Delivery/Receipt Allowance (%)"
+  },
+  {
+   "fieldname": "mr_qty_allowance",
+   "fieldtype": "Float",
+   "label": "Over Transfer Allowance"
+  },
+  {
+   "fieldname": "column_break_j94q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role_allowed_to_over_deliver_receive",
+   "fieldtype": "Link",
+   "label": "Role Allowed to Over Deliver/Receive",
+   "options": "Role"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_negative_stock",
+   "fieldtype": "Check",
+   "label": "Allow Negative Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_barcode_field",
+   "fieldtype": "Check",
+   "label": "Show Barcode Field in Stock Transactions"
+  },
+  {
+   "default": "0",
+   "fieldname": "clean_description_html",
+   "fieldtype": "Check",
+   "label": "Convert Item Description to Clean HTML in Transactions"
+  },
+  {
+   "fieldname": "quality_inspection_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Quality Inspection Settings"
+  },
+  {
+   "fieldname": "action_if_quality_inspection_is_not_submitted",
+   "fieldtype": "Select",
+   "label": "Action If Quality Inspection Is Not Submitted",
+   "options": "Stop\nWarn"
+  },
+  {
+   "fieldname": "column_break_7cd6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action_if_quality_inspection_is_rejected",
+   "fieldtype": "Select",
+   "label": "Action If Quality Inspection Is Rejected",
+   "options": "Stop\nWarn"
+  },
+  {
+   "fieldname": "stock_reservation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stock Reservation"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_stock_reservation",
+   "fieldtype": "Check",
+   "label": "Enable Stock Reservation"
+  },
+  {
+   "fieldname": "column_break_tb2g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_partial_reservation",
+   "fieldtype": "Check",
+   "label": "Allow Partial Reservation"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_reserve_stock_for_sales_order_on_purchase",
+   "fieldtype": "Check",
+   "label": "Auto Reserve Stock for Sales Order on Purchase"
+  },
+  {
+   "fieldname": "serial_and_batch_reservation_section",
+   "fieldtype": "Section Break",
+   "label": "Serial and Batch Reservation"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_reserve_serial_and_batch",
+   "fieldtype": "Check",
+   "label": "Auto Reserve Serial and Batch Nos"
+  },
+  {
+   "fieldname": "serial_and_batch_item_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Serial & Batch Item"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Serial & Batch Item Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_create_serial_and_batch_bundle_for_outward",
+   "fieldtype": "Check",
+   "label": "Auto Create Serial and Batch Bundle For Outward"
+  },
+  {
+   "fieldname": "pick_serial_and_batch_based_on",
+   "fieldtype": "Select",
+   "label": "Pick Serial / Batch Based On",
+   "options": "FIFO\nLIFO\nExpiry"
+  },
+  {
+   "fieldname": "column_break_9lqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_serial_no_and_batch_selector",
+   "fieldtype": "Check",
+   "label": "Disable Serial No And Batch Selector"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_naming_series",
+   "fieldtype": "Check",
+   "label": "Have Default Naming Series for Batch ID?"
+  },
+  {
+   "fieldname": "naming_series_prefix",
+   "fieldtype": "Data",
+   "label": "Naming Series Prefix"
+  },
+  {
+   "fieldname": "stock_planning_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stock Planning"
+  },
+  {
+   "fieldname": "auto_material_request_section",
+   "fieldtype": "Section Break",
+   "label": "Auto Material Request"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_indent",
+   "fieldtype": "Check",
+   "label": "Raise Material Request When Stock Reaches Re-order Level"
+  },
+  {
+   "fieldname": "column_break_4z9d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "reorder_email_notify",
+   "fieldtype": "Check",
+   "label": "Notify by Email on Creation of Automatic Material Request"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-25 02:16:30.618580",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Stock Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

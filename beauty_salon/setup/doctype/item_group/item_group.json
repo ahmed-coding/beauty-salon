@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:item_group_name",
+ "creation": "2023-11-25 02:04:41.806973",
+ "description": "Item Classification",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "gs",
+  "item_group_name",
+  "parent_item_group",
+  "is_group",
+  "image",
+  "column_break_mkvy",
+  "section_break_qbqd",
+  "item_group_defaults",
+  "item_tax_section",
+  "taxes",
+  "lft",
+  "old_parent",
+  "rgt"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_item_group",
+   "fieldtype": "Link",
+   "label": "Parent Item Group",
+   "options": "Item Group"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "section_break_qbqd",
+   "fieldtype": "Section Break",
+   "label": "Defaults"
+  },
+  {
+   "fieldname": "gs",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "fieldname": "item_group_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Group Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_mkvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_group_defaults",
+   "fieldtype": "Link",
+   "label": "Item Group Defaults",
+   "options": "Item Default"
+  },
+  {
+   "fieldname": "item_tax_section",
+   "fieldtype": "Section Break",
+   "label": "Item Tax"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Link",
+   "label": "Taxes",
+   "options": "Item Tax"
+  }
+ ],
+ "icon": "fa fa-sitemap",
+ "image_field": "image",
+ "is_tree": 1,
+ "links": [],
+ "max_attachments": 3,
+ "modified": "2023-11-25 02:37:49.012983",
+ "modified_by": "Administrator",
+ "module": "Setup",
+ "name": "Item Group",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_item_group",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "parent_item_group",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
