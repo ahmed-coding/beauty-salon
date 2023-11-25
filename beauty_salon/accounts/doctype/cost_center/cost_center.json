@@ -6,11 +6,15 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_zhj8",
+  "cost_center_name",
+  "cost_center_number",
+  "parent_cost_center",
+  "column_break_hcxs",
   "lft",
   "rgt",
   "is_group",
   "old_parent",
-  "parent_cost_center"
+  "disabled"
  ],
  "fields": [
   {
@@ -34,6 +38,7 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
@@ -48,14 +53,38 @@
    "fieldname": "parent_cost_center",
    "fieldtype": "Link",
    "ignore_user_permissions": 1,
+   "in_list_view": 1,
    "label": "Parent Cost Center",
-   "options": "Cost Center"
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Center Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center_number",
+   "fieldtype": "Data",
+   "label": "Cost Center Number"
+  },
+  {
+   "fieldname": "column_break_hcxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-11-25 02:46:50.323088",
+ "modified": "2023-11-25 23:15:38.216061",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Cost Center",

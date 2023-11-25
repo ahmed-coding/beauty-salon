@@ -67,7 +67,7 @@
   },
   {
    "fieldname": "default_supplier",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Default Supplier",
    "options": "Supplier"
   },
@@ -133,7 +133,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-11-25 02:48:38.462341",
+ "modified": "2023-11-25 23:11:27.333687",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item Default",
