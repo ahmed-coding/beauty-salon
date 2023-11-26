@@ -1,24 +1,72 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:price_list_name",
  "creation": "2023-11-25 02:41:29.879727",
+ "description": "Price List Master",
  "doctype": "DocType",
+ "document_type": "Setup",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_4zbe"
+  "enabled",
+  "section_break_4zbe",
+  "price_list_name",
+  "currency",
+  "buying",
+  "selling",
+  "price_not_uom_dependent"
  ],
  "fields": [
   {
    "fieldname": "section_break_4zbe",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "price_list_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price List Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "buying",
+   "fieldtype": "Check",
+   "label": "Buying"
+  },
+  {
+   "fieldname": "selling",
+   "fieldtype": "Data",
+   "label": "Selling"
+  },
+  {
+   "fieldname": "price_not_uom_dependent",
+   "fieldtype": "Data",
+   "label": "Price Not UOM Dependent"
   }
  ],
- "index_web_pages_for_search": 1,
+ "icon": "fa fa-tags",
  "links": [],
- "modified": "2023-11-25 02:41:29.879727",
+ "modified": "2023-11-25 23:48:08.422778",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Price List",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -34,7 +82,8 @@
    "write": 1
   }
  ],
+ "search_fields": "currency",
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "states": []
 }

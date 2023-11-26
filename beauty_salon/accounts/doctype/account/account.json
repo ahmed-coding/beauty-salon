@@ -6,11 +6,19 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_5dfg",
-  "lft",
-  "rgt",
+  "column_break_5m49",
+  "disable",
+  "account_name",
+  "account_number",
   "is_group",
+  "root_type",
+  "report_type",
+  "currency",
+  "section_break_jgck",
+  "parent_account",
   "old_parent",
-  "parent_account"
+  "lft",
+  "rgt"
  ],
  "fields": [
   {
@@ -34,6 +42,7 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "label": "Is Group"
@@ -50,12 +59,55 @@
    "ignore_user_permissions": 1,
    "label": "Parent Account",
    "options": "Account"
+  },
+  {
+   "fieldname": "column_break_5m49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "root_type",
+   "fieldtype": "Select",
+   "label": "Root Type",
+   "options": "\nAsset\nLiability\nIncome\nExpense\nEquity"
+  },
+  {
+   "fieldname": "report_type",
+   "fieldtype": "Data",
+   "label": "Report Type",
+   "options": "\nBalance Sheet\nProfit and Loss"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_jgck",
+   "fieldtype": "Section Break"
   }
  ],
- "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-11-25 02:44:35.300699",
+ "modified": "2023-11-26 00:04:42.163004",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Account",
@@ -77,5 +129,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

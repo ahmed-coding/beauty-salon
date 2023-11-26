@@ -6,16 +6,21 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_io6p",
+  "disabled",
+  "warehouse_name",
+  "section_break_ioip",
+  "is_group",
+  "parent_warehouse",
+  "tree_details_section",
   "lft",
   "rgt",
-  "is_group",
-  "old_parent",
-  "parent_warehouse"
+  "old_parent"
  ],
  "fields": [
   {
    "fieldname": "section_break_io6p",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Warehouse Detail"
   },
   {
    "fieldname": "lft",
@@ -37,7 +42,7 @@
    "default": "0",
    "fieldname": "is_group",
    "fieldtype": "Check",
-   "label": "Is Group"
+   "label": "Is Group Warehouse"
   },
   {
    "fieldname": "old_parent",
@@ -51,12 +56,34 @@
    "ignore_user_permissions": 1,
    "label": "Parent Warehouse",
    "options": "Warehouse"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "warehouse_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Warehouse Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ioip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tree_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tree Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2023-11-25 02:40:18.482973",
+ "modified": "2023-11-25 23:57:07.810389",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse",

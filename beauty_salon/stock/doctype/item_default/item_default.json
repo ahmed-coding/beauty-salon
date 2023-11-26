@@ -5,7 +5,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "company",
   "default_warehouse",
   "section_break_4s34",
   "default_price_list",
@@ -29,12 +28,6 @@
   {
    "fieldname": "section_break_4s34",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "company",
-   "fieldtype": "Data",
-   "label": "Company",
-   "options": "Company"
   },
   {
    "fieldname": "default_warehouse",
@@ -94,7 +87,7 @@
   },
   {
    "fieldname": "default_selling_cost_center",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Default Selling Cost Center",
    "options": "Cost Center"
   },
@@ -133,7 +126,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-11-25 23:11:27.333687",
+ "modified": "2023-11-25 23:42:44.239778",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item Default",

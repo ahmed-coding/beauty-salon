@@ -3,7 +3,7 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:uom_name",
- "creation": "2013-01-10 16:34:24",
+ "creation": "2023-11-26 01:27:30.352708",
  "doctype": "DocType",
  "document_type": "Setup",
  "engine": "InnoDB",
@@ -14,33 +14,30 @@
  ],
  "fields": [
   {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
    "fieldname": "uom_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "UOM Name",
-   "oldfieldname": "uom_name",
-   "oldfieldtype": "Data",
    "reqd": 1,
    "unique": 1
   },
   {
    "default": "0",
-   "description": "Check this to disallow fractions. (for Nos)",
    "fieldname": "must_be_whole_number",
    "fieldtype": "Check",
    "label": "Must be Whole Number"
-  },
-  {
-   "default": "1",
-   "fieldname": "enabled",
-   "fieldtype": "Check",
-   "label": "Enabled"
   }
  ],
  "icon": "fa fa-compass",
- "idx": 1,
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-10-18 14:07:43.722144",
+ "modified": "2023-11-26 01:29:21.200660",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "UOM",
@@ -52,31 +49,17 @@
    "delete": 1,
    "email": 1,
    "export": 1,
-   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Item Manager",
+   "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Stock Manager"
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Stock User"
   }
  ],
  "quick_entry": 1,
  "show_name_in_global_search": 1,
  "sort_field": "modified",
- "sort_order": "ASC"
+ "sort_order": "ASC",
+ "states": []
 }

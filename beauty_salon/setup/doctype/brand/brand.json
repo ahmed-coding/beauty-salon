@@ -2,40 +2,38 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:brand",
- "creation": "2013-02-22 01:27:54",
+ "autoname": "brand",
+ "creation": "2023-11-26 01:32:41.291519",
  "doctype": "DocType",
  "document_type": "Setup",
  "engine": "InnoDB",
  "field_order": [
-  "brand",
+  "brand_name",
   "image",
   "description",
-  "defaults",
+  "defaults_section",
   "brand_defaults"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "brand",
+   "fieldname": "brand_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Brand Name",
-   "oldfieldname": "brand",
-   "oldfieldtype": "Data",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   },
   {
    "fieldname": "description",
    "fieldtype": "Text",
-   "in_list_view": 1,
-   "label": "Description",
-   "oldfieldname": "description",
-   "oldfieldtype": "Text",
-   "width": "300px"
+   "label": "Description"
   },
   {
-   "fieldname": "defaults",
+   "fieldname": "defaults_section",
    "fieldtype": "Section Break",
    "label": "Defaults"
   },
@@ -44,22 +42,16 @@
    "fieldtype": "Table",
    "label": "Brand Defaults",
    "options": "Item Default"
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "hidden": 1,
-   "label": "Image"
   }
  ],
  "icon": "fa fa-certificate",
- "idx": 1,
  "image_field": "image",
  "links": [],
- "modified": "2021-03-01 15:57:30.005783",
+ "modified": "2023-11-26 01:36:13.875961",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Brand",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -67,45 +59,17 @@
    "delete": 1,
    "email": 1,
    "export": 1,
-   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Item Manager",
+   "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Stock User"
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Sales User"
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Purchase User"
-  },
-  {
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Accounts User"
   }
  ],
  "quick_entry": 1,
  "show_name_in_global_search": 1,
  "sort_field": "modified",
- "sort_order": "ASC"
+ "sort_order": "DESC",
+ "states": []
 }

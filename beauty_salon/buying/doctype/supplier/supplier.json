@@ -44,7 +44,7 @@
   },
   {
    "fieldname": "supplier_group",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Supplier Group",
    "options": "Supplier Group"
   },
@@ -87,13 +87,13 @@
   },
   {
    "fieldname": "default_currency",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Billing Currency",
    "options": "Currency"
   },
   {
    "fieldname": "default_price_list",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Price List",
    "options": "Price List"
   },
@@ -106,7 +106,7 @@
  ],
  "icon": "fa fa-user",
  "links": [],
- "modified": "2023-11-25 23:19:24.417092",
+ "modified": "2023-11-25 23:41:47.278375",
  "modified_by": "Administrator",
  "module": "Buying",
  "name": "Supplier",
